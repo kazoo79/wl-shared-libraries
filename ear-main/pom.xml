@@ -1,0 +1,30 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>pl.sygnity.shared-lib</groupId>
+   <version>1.0</version>
+   <artifactId>ear-main</artifactId>
+   <packaging>pom</packaging>
+   <name>ear-main</name>
+   <modules>
+      <module>primary-source</module>
+      <module>servlets</module>
+      <module>ear</module>
+   </modules>
+   <build>
+   </build>
+   <dependencyManagement>
+      <dependencies>
+         <dependency>
+            <groupId>pl.sygnity.shared-lib</groupId>
+            <artifactId>ear-main-primary-source</artifactId>
+            <version>1.0</version>
+         </dependency>
+         <dependency>
+            <groupId>pl.sygnity.shared-lib</groupId>
+            <artifactId>ear-main-servlet</artifactId>
+            <version>1.0</version>
+            <type>war</type>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+</project>

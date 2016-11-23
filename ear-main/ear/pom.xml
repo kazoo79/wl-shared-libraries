@@ -1,0 +1,39 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>pl.sygnity.shared-lib</groupId>
+   <artifactId>ear-main-ear</artifactId>
+   <packaging>ear</packaging>
+   <version>1.0</version>
+   <name>ear assembly</name>
+   <parent>
+      <groupId>pl.sygnity.shared-lib</groupId>
+      <artifactId>ear-main</artifactId>
+      <version>1.0</version>
+   </parent>
+   <dependencies>
+      <dependency>
+         <groupId>pl.sygnity.shared-lib</groupId>
+         <artifactId>ear-main-servlet</artifactId>
+         <type>war</type>
+      </dependency>
+      <dependency>
+         <groupId>pl.sygnity.shared-lib</groupId>
+         <artifactId>ear-main-primary-source</artifactId>
+      </dependency>
+   </dependencies>
+   <build>
+      <plugins>
+         <plugin>
+            <artifactId>maven-ear-plugin</artifactId>
+            <configuration>
+               <archive>
+                  <manifest>
+                     <addClasspath>true</addClasspath>
+                  </manifest>
+               </archive>
+               <defaultLibBundleDir>APP-INF/lib</defaultLibBundleDir>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+</project>

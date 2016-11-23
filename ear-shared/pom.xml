@@ -1,0 +1,20 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>pl.sygnity.shared-lib</groupId>
+   <version>1.0</version>
+   <artifactId>ear-shared</artifactId>
+   <packaging>pom</packaging>
+   <name>project</name>
+   <modules>
+       <module>ear</module>
+   </modules>
+   <build>
+   </build>
+   <distributionManagement>
+      <site>
+         <id>site</id>
+         <name>project website</name>
+         <url>scp://local.company.com/websites/project.company.com/</url>
+      </site>
+   </distributionManagement>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<weblogic-application>
+
+    <!-- reference to a shared Java EE library -->
+    <library-ref>
+        <!-- specifies the name of the shared Java EE library to use.
+        It must exactly match the value of the Extension-Name attribute
+        in the manifest file at shared library's ear.-->
+        <library-name>ear-shared-libraries</library-name>
+    </library-ref>
+
+    <application-param>
+        <param-name>webapp.encoding.default</param-name>
+        <param-value>UTF-8</param-value>
+    </application-param>
+
+
+</weblogic-application>

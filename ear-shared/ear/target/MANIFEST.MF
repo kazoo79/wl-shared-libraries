@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: pdebala
+Class-Path: APP-INF/lib/spring-webmvc-3.2.13.RELEASE.jar APP-INF/lib/s
+ pring-beans-3.2.13.RELEASE.jar APP-INF/lib/spring-context-3.2.13.RELE
+ ASE.jar APP-INF/lib/spring-aop-3.2.13.RELEASE.jar APP-INF/lib/aopalli
+ ance-1.0.jar APP-INF/lib/spring-core-3.2.13.RELEASE.jar APP-INF/lib/c
+ ommons-logging-1.1.3.jar APP-INF/lib/spring-expression-3.2.13.RELEASE
+ .jar APP-INF/lib/spring-web-3.2.13.RELEASE.jar APP-INF/lib/jstl-1.2.j
+ ar APP-INF/lib/guava-19.0.jar
+Extension-Name: ear-shared-libraries
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_45
+

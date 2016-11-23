@@ -1,0 +1,56 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>pl.sygnity.shared-lib</groupId>
+   <artifactId>ear-shared-ear</artifactId>
+   <packaging>ear</packaging>
+   <version>1.0</version>
+   <name>ear assembly</name>
+   <parent>
+      <groupId>pl.sygnity.shared-lib</groupId>
+      <artifactId>ear-shared</artifactId>
+      <version>1.0</version>
+   </parent>
+
+    <properties>
+        <guava.version>19.0</guava.version>
+        <spring.version>3.2.13.RELEASE</spring.version>
+        <jstl.version>1.2</jstl.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+       <dependency>
+           <groupId>com.google.guava</groupId>
+           <artifactId>guava</artifactId>
+           <version>${guava.version}</version>
+       </dependency>
+   </dependencies>
+
+   <build>
+      <plugins>
+         <plugin>
+            <artifactId>maven-ear-plugin</artifactId>
+            <configuration>
+               <archive>
+                  <manifest>
+                     <addClasspath>true</addClasspath>
+                  </manifest>
+                  <manifestEntries>
+                     <Extension-Name>ear-shared-libraries</Extension-Name>
+                  </manifestEntries>
+               </archive>
+                <defaultLibBundleDir>APP-INF/lib</defaultLibBundleDir>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+</project>

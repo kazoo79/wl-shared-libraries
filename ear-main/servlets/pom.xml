@@ -1,0 +1,17 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>pl.sygnity.shared-lib</groupId>
+   <artifactId>ear-main-servlets</artifactId>
+   <packaging>pom</packaging>
+   <name>ear-main-servlets</name>
+   <version>1.0</version>
+   <parent>
+      <groupId>pl.sygnity.shared-lib</groupId>
+      <artifactId>ear-main</artifactId>
+      <version>1.0</version>
+   </parent>
+   <modules>
+      <module>servlet</module>
+   </modules>
+</project>
+
